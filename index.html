@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBook</title>
+    <link rel="stylesheet" href="/sytle.css">
+    <script src="https://kit.fontawesome.com/0ef7716635.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <!--navbar-->
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="/images/logo.png" class="logo" alt="logo">
+            </a>
+            <ul>
+                <li><img src="/images/notification.png" alt=""></li>
+                <li><img src="/images/inbox.png" alt=""></li>
+                <li><img src="/images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="/images/search.png" alt="">
+                <input type="text" placeholder="SocialBook'ta Ara">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="/images/profile-pic.png" alt="">
+            </div>
+        </div>
+
+        <!-- settings-menu -->
+
+        <div class="settings-menu">
+
+            <div id="dark-btn" >
+                <span></span>
+            </div>    
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="/images/profile-pic.png" alt="">
+                    <div>
+                        <p>Fatih Canbay</p>
+                        <a href="profile.html">Profili Gör</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="/images/feedback.png" alt="">
+                    <div>
+                        <p>Görüş Bildir</p>
+                        <a href="#">Socialbook'u Geliştirmemize Yardımcı Ol</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="settings-links">
+                    <img src="/images/setting.png" alt="" class="settings-icon">
+                    <a href="#">Ayarlar & Gizlilik <img src="/images/arrow.png" width="10px"> </a>
+                </div>
+                <div class="settings-links">
+                    <img src="/images/help.png" alt="" class="settings-icon">
+                    <a href="#">Yardım & Destek <img src="/images/arrow.png" width="10px"> </a>
+                </div>
+                <div class="settings-links">
+                    <img src="/images/display.png" alt="" class="settings-icon">
+                    <a href="#">Görünüm & Erişilebilirlik <img src="/images/arrow.png" width="10px"> </a>
+                </div>
+                <div class="settings-links">
+                    <img src="/images/logout.png" alt="" class="settings-icon">
+                    <a href="#">Çıkış Yap <img src="/images/arrow.png" width="10px"> </a>
+                </div>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Container-->
+
+    <div class="container">
+        <!--left-sidebar-->
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"><img src="/images/news.png" alt="">Haber Kaynağı</a>
+                <a href="#"><img src="/images/friends.png" alt="">Arkadaşlar</a>
+                <a href="#"><img src="/images/group.png" alt="">Gruplar</a>
+                <a href="#"><img src="/images/marketplace.png" alt="">Marketplace</a>
+                <a href="#"><img src="/images/watch.png" alt="">Video</a>
+                <a href="#">Daha Fazlasını Gör</a>
+            </div>
+            <div class="shortcut-links">
+                <p>Kısayollarınız</p>
+                <a href="#"><img src="/images/shortcut-1.png" alt="">Web Developers</a>
+                <a href="#"><img src="/images/shortcut-2.png" alt="">Web Designer Course</a>
+                <a href="#"><img src="/images/shortcut-3.png" alt="">Full Stack Development</a>
+                <a href="#"><img src="/images/shortcut-4.png" alt="">Website Experts</a>
+            </div>
+        </div>
+        <!--main content-->
+        <div class="main-content">
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="/images/upload.png" alt="">
+                    <p>Hikaye Oluştur</p>
+                </div>
+                <div class="story story2">
+                    <img src="/images/member-1.png" alt="">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="/images/member-2.png" alt="">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="/images/member-3.png" alt="">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="/images/member-4.png" alt="">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="/images/profile-pic.png" alt="">
+                    <div>
+                        <p>Fatih Canbay</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="Ne düşünüyorsun, Fatih?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="/images/live-video.png" alt="">Canlı Video</a>
+                        <a href="#"><img src="/images/photo.png" alt="">Fotoğraf/Video</a>
+                        <a href="#"><img src="/images/feeling.png" alt="">His/Hareket</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile-pic.png" alt="">
+                        <div>
+                            <p>Fatih Canbay</p>
+                            <span>June 24 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Abone Ol <span>@Udemig</span> For watch more Videon on Website<a
+                        href="#">#Mehmet Can Seyhan</a> <a href="#">YoutubeChannel</a></p>
+                <img src="/images/feed-image-1.png" class="post-img" alt="">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like-blue.png" alt=""> 120</div>
+                        <div><img src="/images/comments.png" alt=""> 45</div>
+                        <div><img src="/images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile-pic.png" alt=""> <i class="fa-solid fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile-pic.png" alt="">
+                        <div>
+                            <p>Fatih Canbay</p>
+                            <span>June 24 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Like and share this video with friends, tag <span>@Udemig</span> facebook
+                    page on your post.<a href="#">#Mehmet Can Seyhan</a> <a href="#">YoutubeChannel</a></p>
+                <img src="/images/feed-image-2.png" class="post-img" alt="">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like.png" alt=""> 120</div>
+                        <div><img src="/images/comments.png" alt=""> 45</div>
+                        <div><img src="/images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile-pic.png" alt=""> <i class="fa-solid fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile-pic.png" alt="">
+                        <div>
+                            <p>Fatih Canbay</p>
+                            <span>June 24 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Like and share this video with friends, tag <span>@Udemig</span> facebook
+                    page on your post.<a href="#">#Mehmet Can Seyhan</a> <a href="#">YoutubeChannel</a></p>
+                <img src="/images/feed-image-3.png" class="post-img" alt="">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like.png" alt=""> 120</div>
+                        <div><img src="/images/comments.png" alt=""> 45</div>
+                        <div><img src="/images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile-pic.png" alt=""> <i class="fa-solid fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile-pic.png" alt="">
+                        <div>
+                            <p>Fatih Canbay</p>
+                            <span>June 24 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Like and share this video with friends, tag <span>@Udemig</span> facebook
+                    page on your post.<a href="#">#Mehmet Can Seyhan</a> <a href="#">YoutubeChannel</a></p>
+                <img src="/images/feed-image-4.png" class="post-img" alt="">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like.png" alt=""> 120</div>
+                        <div><img src="/images/comments.png" alt=""> 45</div>
+                        <div><img src="/images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile-pic.png" alt=""> <i class="fa-solid fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="/images/profile-pic.png" alt="">
+                        <div>
+                            <p>Fatih Canbay</p>
+                            <span>June 24 2023, 13:40 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+
+                <p class="post-text">Like and share this video with friends, tag <span>@Udemig</span> facebook
+                    page on your post.<a href="#">#Mehmet Can Seyhan</a> <a href="#">YoutubeChannel</a></p>
+                <img src="/images/feed-image-5.png" class="post-img" alt="">
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="/images/like.png" alt=""> 120</div>
+                        <div><img src="/images/comments.png" alt=""> 45</div>
+                        <div><img src="/images/share.png" alt=""> 20</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="/images/profile-pic.png" alt=""> <i class="fa-solid fa-caret-down"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Daha Fazlası</button>
+
+        </div>
+
+
+        <!--right-sidebar-->
+
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Etkinlikler</h4>
+                <a href="#">Hepsini Gör</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                    <a href="#">Daha Fazla</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>Willson Tech Park</p>
+                    <a href="#">Daha Fazla</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Reklam Yöneticisi</h4>
+                <a href="#">Kapat</a>
+            </div>
+            <img src="/images/advertisement.png" class="sidebar-ads" alt="">
+            <div class="sidebar-title">
+                <h4>Sohbetler</h4>
+                <a href="#">Sohbeti Gizle</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="/images/member-1.png" alt="">
+                </div>
+                <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="/images/member-2.png" alt="">
+                </div>
+                <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="/images/member-3.png" alt="">
+                </div>
+                <p>Samona Rose</p>
+            </div>
+
+        </div> 
+    </div>
+
+
+    <!--footer-->
+
+<div class="footer">
+    <p>Copyright 2023 - Fatih Canbay - Web Developer </p>
+</div>
+
+
+
+<script src="/script.js"></script>
+
+</body>
+
+</html>
